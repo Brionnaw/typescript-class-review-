@@ -1,13 +1,4 @@
-var Person = (function () {
-    function Person() {
-    }
-    Person.prototype.getFullName = function (first, last) {
-        return first + " " + last;
-    };
-    return Person;
-}());
-;
-var Brionna = new Person();
-Brionna.firstName = 'brionna';
-Brionna.lastName = 'white';
-console.log(Brionna.getFullName(Brionna.firstName, Brionna.lastName));
+define(["require", "exports", './module.ts'], function (require, exports, module_ts_1) {
+    "use strict";
+    module_ts_1.saySomething();
+});
