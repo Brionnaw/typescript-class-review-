@@ -1,11 +1,13 @@
-var Product = (function () {
-    function Product() {
+var Person = (function () {
+    function Person() {
     }
-    Product.prototype.calculateTax = function (val) {
-        return val * 0.08;
+    Person.prototype.getFullName = function (first, last) {
+        return first + " " + last;
     };
-    return Product;
+    return Person;
 }());
 ;
-var product1 = new Product();
-console.log(product1.calculateTax(10));
+var Brionna = new Person();
+Brionna.firstName = 'brionna';
+Brionna.lastName = 'white';
+console.log(Brionna.getFullName(Brionna.firstName, Brionna.lastName));

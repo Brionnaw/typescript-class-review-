@@ -16,14 +16,17 @@
 // use instead
 
 
+class Person {
+    firstName: string
+    lastName:string
+    getFullName(first:string,last:string){
 
-class Product {
-  name:string
-   price:number
-  calculateTax(val:number) {
-  return val * 0.08;
-}
+      return first + " " + last;
+    }
 };
 
-let product1 = new Product();
-console.log(product1.calculateTax(10));
+let Brionna = new Person();
+    Brionna.firstName = 'brionna';
+    Brionna.lastName = 'white';
+
+console.log(Brionna.getFullName(Brionna.firstName, Brionna.lastName));
